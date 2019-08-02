@@ -1,8 +1,5 @@
 const sql = "insert into table_name123 (`id`,`name`,sign) values(123,'aaa',\"d)d\\\"d\"),(234, 'ccc',\"`eeee`\")";
 
-let temp = [];
-let production = null;
-
 console.log(sql);
 const numberReg = /[0-9]/;
 const letterReg = /[a-z_]/i;
