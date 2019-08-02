@@ -6,7 +6,7 @@ let production = null;
 console.log(sql);
 const numberReg = /[0-9]/;
 const letterReg = /[a-z_]/i;
-const letterMixNumberReg = /[a-z0-9_]/i
+const letterMixNumberReg = /[`a-z0-9_]/i
 
 const tokenizer = (input) => {
   let current = 0;
@@ -62,7 +62,7 @@ const tokenizer = (input) => {
       continue;
     }
 
-    if (char === '"' || char === "'" || char === "`") {
+    if (char === '"' || char === "'") {
       let value = '';
       let s = char;
       char = input[++current];
