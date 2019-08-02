@@ -145,10 +145,5 @@ const parser = (tokens) => {
   }
 }
 
-// console.log(tokens);
-
 parser(tokens)
-// console.log(parse.body);
-// console.log(compile(parse));
-console.log(syntax);
-console.log("VALUES:", syntax["VALUES"]);
+console.log(JSON.stringify(syntax));
