@@ -35,7 +35,7 @@ insert into table_name123 (`id`,`name`,sign) values(123,'aaa',"d)d\"d"),(234, 'c
     params: [ [Object], [Object], [Object], [Object], [Object] ] } ]
 
 // 还原
-insert into table_name123 ("id", "name", sign) values (123, "aaa", "d)d\"d") ,  (234, "ccc", "`eeee`")
+insert into table_name123 (`id`, `name`, sign) values (123, "aaa", "d)d\"d") ,  (234, "ccc", "`eeee`")
 ```
 
 
